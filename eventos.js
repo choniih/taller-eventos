@@ -1,5 +1,6 @@
-function saludar() {
+function saludar(event) {
     alert('Hola!');
+    event.stopPropagation();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
